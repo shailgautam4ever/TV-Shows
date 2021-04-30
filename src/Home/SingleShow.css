@@ -1,0 +1,82 @@
+.p-10 {
+  padding: 10px;
+}
+.single-show-container {
+  display: flex;
+  /* padding: 10px;
+  margin: 10px; */
+  flex: 1;
+  /* background-image: linear-gradient(to right, #00416a, #e4e5e6); */
+  /* background-image: linear-gradient(to right, #f1f2b5, #267871); */
+  background-image: linear-gradient(to right, #70e1f5, #ffd194);
+}
+.single-show-sub-container {
+  flex: 1;
+}
+
+.single-show-sub-container img {
+  width: 300px;
+  margin: 20px;
+  margin-left: 40px;
+}
+
+.sub-container-df {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: space-around;
+}
+.df-dc {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+.title {
+  font-size: 50px;
+}
+.footer {
+  height: 5rem;
+  /* background-color: rgb(44, 122, 150); */
+  background-color: black;
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
+.cast-image {
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+}
+.cast-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cast-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.dfc {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.name-font {
+  font-size: 20px;
+}
+.ant-table {
+  background-image: linear-gradient(0deg, #2c3e50, #4ca1af) !important;
+  color: #fff !important;
+}
+.ant-table-row:hover {
+  color: black;
+}
+.ant-table-thead .ant-table-cell {
+  background: #2c3e50;
+  color: white;
+}
