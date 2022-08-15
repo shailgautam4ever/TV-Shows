@@ -21,7 +21,7 @@ class SingleShow extends Component {
     console.log(this.props);
     const { shows, match } = this.props;
     const { showId } = match.params;
-    fetch(`http://api.tvmaze.com/shows/${showId}`)
+    fetch(`https://api.tvmaze.com/shows/${showId}`)
       .then((res) => res.json())
       .then((show) => {
         console.log(show);
@@ -30,14 +30,14 @@ class SingleShow extends Component {
       })
       .catch((err) => console.log(err));
 
-    fetch(`http://api.tvmaze.com/shows/${showId}/cast`)
+    fetch(`https://api.tvmaze.com/shows/${showId}/cast`)
       .then((res) => res.json())
       .then((cast) => {
         console.log("Cast Data", cast);
         this.setState({ cast });
       });
 
-    fetch(`http://api.tvmaze.com/shows/${showId}/episodes`)
+    fetch(`https://api.tvmaze.com/shows/${showId}/episodes`)
       .then((res) => res.json())
       .then((episodes) => {
         console.log("data", episodes);

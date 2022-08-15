@@ -13,7 +13,7 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://api.tvmaze.com/shows")
+    fetch("https://api.tvmaze.com/shows")
       .then((res) => res.json())
       .then((result) => {
         console.log("result ", result[0]);
@@ -26,7 +26,7 @@ export default class Home extends React.Component {
     if (!value) {
       this.setState({ searchedShows: null });
     } else {
-      fetch(`http://api.tvmaze.com/search/shows?q=${value}`)
+      fetch(`https://api.tvmaze.com/search/shows?q=${value}`)
         .then((res) => res.json())
         .then((data) => {
           // const searchedShow = [];
